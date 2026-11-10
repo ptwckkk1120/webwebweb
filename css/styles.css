@@ -1,9 +1,4 @@
 /* ---------- Brand fonts (self-hosted) ---------- */
-@font-face{font-family:'Optima'; src:url('../assets/fonts/optima-regular.woff2') format('woff2'); font-weight:300 400; font-style:normal; font-display:swap;}
-@font-face{font-family:'Optima'; src:url('../assets/fonts/optima-medium.woff2') format('woff2'); font-weight:500; font-style:normal; font-display:swap;}
-@font-face{font-family:'Optima'; src:url('../assets/fonts/optima-bold.woff2') format('woff2'); font-weight:600 800; font-style:normal; font-display:swap;}
-@font-face{font-family:'Optima'; src:url('../assets/fonts/optima-italic.woff2') format('woff2'); font-weight:300 500; font-style:italic; font-display:swap;}
-@font-face{font-family:'Belinda New'; src:url('../assets/fonts/belinda-new.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap;}
 
 /* ==========================================================================
    The Boat Shop Corporation — premium build
@@ -30,9 +25,9 @@
   --sec:clamp(72px,min(8.6vh,7vw),150px);
   --fs-body:clamp(16px,min(1.2vw,2vh),21px);
   --fs-small:clamp(13.5px,.98vw,17px);
-  --body:'Optima','Candara','Segoe UI',system-ui,sans-serif;
-  --display:var(--body);
-  --script:'Belinda New','Brush Script MT','Segoe Script',cursive;
+  --body:'Avenir LT Pro',sans-serif;
+  --display:'Optima',serif;
+  --script:'Belinda New',cursive;
   --num:var(--display);
 }
 
