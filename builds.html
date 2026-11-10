@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Recent Builds | The Boat Shop Corporation</title>
+<link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+<meta name="description" content="The Boat Shop Corporation is a Filipino, family-run boatbuilder established in 1957. Explore custom fiberglass boats for transport, rescue, dive, patrol, fishing, and leisure in Rosario, Cavite."/>
+<meta name="theme-color" content="#0b1c2a"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Recent Builds | The Boat Shop Corporation"/>
+<meta property="og:description" content="Custom fiberglass boats, repairs, and marine fabrication from a family-run Filipino boatbuilder since 1957."/>
+<meta property="og:image" content="assets/images/hero-poster.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script>
+  document.documentElement.classList.add('js');
+  try { if (sessionStorage.getItem('tbsc-nav')) document.documentElement.classList.add('arriving'); if (sessionStorage.getItem('tbsc-intro')) document.documentElement.classList.add('no-intro'); } catch (e) {}
+</script>
+<link rel="preload" href="assets/fonts/belinda-new.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/avenir-lt-pro-book.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/optima-regular.woff2" as="font" type="font/woff2" crossorigin>
+<style id="brand-fonts">
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-lightoblique.woff2') format('woff2');font-weight:300;font-style:italic;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-book.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-bookoblique.woff2') format('woff2');font-weight:400;font-style:italic;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-roman.woff2') format('woff2');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-oblique.woff2') format('woff2');font-weight:500;font-style:italic;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-medium.woff2') format('woff2');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-mediumoblique.woff2') format('woff2');font-weight:600;font-style:italic;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-heavy.woff2') format('woff2');font-weight:800;font-style:normal;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-heavyoblique.woff2') format('woff2');font-weight:800;font-style:italic;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-black.woff2') format('woff2');font-weight:900;font-style:normal;font-display:block}
+@font-face{font-family:'Avenir LT Pro';src:url('assets/fonts/avenir-lt-pro-blackoblique.woff2') format('woff2');font-weight:900;font-style:italic;font-display:block}
+@font-face{font-family:'Optima';src:url('assets/fonts/optima-regular.woff2') format('woff2');font-weight:300 400;font-style:normal;font-display:block}
+@font-face{font-family:'Optima';src:url('assets/fonts/optima-medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Optima';src:url('assets/fonts/optima-bold.woff2') format('woff2');font-weight:600 800;font-style:normal;font-display:block}
+@font-face{font-family:'Optima';src:url('assets/fonts/optima-italic.woff2') format('woff2');font-weight:300 500;font-style:italic;font-display:block}
+@font-face{font-family:'Belinda New';src:url('assets/fonts/belinda-new.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+</style>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="subpage">
+
+<div class="curtain" id="curtain" aria-hidden="true"><img src="assets/images/logo-white.png" alt=""/></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header id="site-header" class="solid">
+  <div class="nav-inner">
+    <a href="index.html" class="logo-mark" aria-label="The Boat Shop Corporation, home">
+      <img class="logo-white-img" src="assets/images/logo-white.png" alt="The Boat Shop Corporation crest"/>
+      <img class="logo-navy-img" src="assets/images/logo-navy.png" alt=""/>
+    </a>
+    <div class="nav-links">
+      <nav id="primary-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="builds.html" aria-current="page">Builds</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="btn btn-ghost btn-sm js-inquiry-trigger" data-form-url="https://docs.google.com/forms/d/e/1FAIpQLSdglZTCsjjjnS9Xz04HMgk5vo55dq-pGL-_iDdlhTLxzVGUOg/viewform">Request a build</button>
+    </div>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true">&#9776;</span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<section id="gallery" class="builds is-stacked" aria-label="Recent builds">
+  <div class="builds-pin">
+    <div class="builds-head">
+      <div>
+        <div class="label fade">From the yard</div>
+        <h2 class="split">Recent builds.</h2>
+      </div>
+      <p class="fade">Hulls from our own molds, fitted out at the boatyard in Rosario, Cavite and delivered to operators across the country.</p>
+    </div>
+    <div class="deck" id="deck">
+        <button type="button" class="card" data-i="0" data-name="Blue Moon Elite" data-app="Private &amp; Leisure" data-engines="2" data-where="" aria-label="Blue Moon Elite, Private &amp; Leisure. View details">
+          <img src="assets/images/builds/blue-moon-elite.jpg" alt="Blue Moon Elite, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Private &amp; Leisure</span>
+          <span class="card-name">Blue Moon Elite</span>
+        </button>
+        <button type="button" class="card" data-i="1" data-name="#HAPIsabela" data-app="Passenger &amp; Tourism" data-engines="1" data-where="Province of Isabela, Philippines" aria-label="#HAPIsabela, Passenger &amp; Tourism. View details">
+          <img src="assets/images/builds/hapisabela.jpg" alt="#HAPIsabela, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Passenger &amp; Tourism</span>
+          <span class="card-name">#HAPIsabela</span>
+        </button>
+        <button type="button" class="card" data-i="2" data-name="Sug Adventurer" data-app="Passenger &amp; Tour" data-engines="" data-where="" aria-label="Sug Adventurer, Passenger &amp; Tour. View details">
+          <img src="assets/images/builds/sug-adventurer.jpg" alt="Sug Adventurer, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Passenger &amp; Tour</span>
+          <span class="card-name">Sug Adventurer</span>
+        </button>
+        <button type="button" class="card" data-i="3" data-name="ABL" data-app="Dive &amp; Sportfishing" data-engines="2" data-where="" aria-label="ABL, Dive &amp; Sportfishing. View details">
+          <img src="assets/images/builds/abl.jpg" alt="ABL, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Dive &amp; Sportfishing</span>
+          <span class="card-name">ABL</span>
+        </button>
+        <button type="button" class="card" data-i="4" data-name="Atlantis – LIZ" data-app="Dive Operators" data-engines="1" data-where="Puerto Galera, Oriental Mindoro" aria-label="Atlantis – LIZ, Dive Operators. View details">
+          <img src="assets/images/builds/atlantis-liz.jpg" alt="Atlantis – LIZ, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Dive Operators</span>
+          <span class="card-name">Atlantis – LIZ</span>
+        </button>
+        <button type="button" class="card" data-i="5" data-name="Blue Paradive Center" data-app="Dive Operators" data-engines="1" data-where="" aria-label="Blue Paradive Center, Dive Operators. View details">
+          <img src="assets/images/builds/blue-paradive-center.jpg" alt="Blue Paradive Center, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Dive Operators</span>
+          <span class="card-name">Blue Paradive Center</span>
+        </button>
+        <button type="button" class="card" data-i="6" data-name="Tech Asia" data-app="Dive &amp; Beach Operations" data-engines="" data-where="" aria-label="Tech Asia, Dive &amp; Beach Operations. View details">
+          <img src="assets/images/builds/tech-asia.jpg" alt="Tech Asia, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Dive &amp; Beach Operations</span>
+          <span class="card-name">Tech Asia</span>
+        </button>
+        <button type="button" class="card" data-i="7" data-name="Patrol Boat — Outrigger" data-app="Security &amp; Government" data-engines="1" data-where="" aria-label="Patrol Boat — Outrigger, Security &amp; Government. View details">
+          <img src="assets/images/builds/patrol-boat-outrigger.jpg" alt="Patrol Boat — Outrigger, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Security &amp; Government</span>
+          <span class="card-name">Patrol Boat — Outrigger</span>
+        </button>
+        <button type="button" class="card" data-i="8" data-name="Patrol Boat — Center Console" data-app="Security &amp; Government" data-engines="1" data-where="" aria-label="Patrol Boat — Center Console, Security &amp; Government. View details">
+          <img src="assets/images/builds/patrol-boat-center-console.jpg" alt="Patrol Boat — Center Console, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Security &amp; Government</span>
+          <span class="card-name">Patrol Boat — Center Console</span>
+        </button>
+        <button type="button" class="card" data-i="9" data-name="Patrol Boat — Cabin Cruiser" data-app="Security &amp; Government" data-engines="2" data-where="" aria-label="Patrol Boat — Cabin Cruiser, Security &amp; Government. View details">
+          <img src="assets/images/builds/patrol-boat-cabin-cruiser.jpg" alt="Patrol Boat — Cabin Cruiser, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Security &amp; Government</span>
+          <span class="card-name">Patrol Boat — Cabin Cruiser</span>
+        </button>
+        <button type="button" class="card" data-i="10" data-name="Patrol Boat — Tunay at Natural" data-app="Security &amp; Government" data-engines="2" data-where="" aria-label="Patrol Boat — Tunay at Natural, Security &amp; Government. View details">
+          <img src="assets/images/builds/patrol-boat-tunay-at-natural.jpg" alt="Patrol Boat — Tunay at Natural, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Security &amp; Government</span>
+          <span class="card-name">Patrol Boat — Tunay at Natural</span>
+        </button>
+        <button type="button" class="card" data-i="11" data-name="Sea Ambulance — MDRRMO Panglao" data-app="Medical Evacuation" data-engines="2" data-where="Panglao, Bohol" aria-label="Sea Ambulance — MDRRMO Panglao, Medical Evacuation. View details">
+          <img src="assets/images/builds/sea-ambulance-mdrrmo-panglao.jpg" alt="Sea Ambulance — MDRRMO Panglao, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Medical Evacuation</span>
+          <span class="card-name">Sea Ambulance — MDRRMO Panglao</span>
+        </button>
+        <button type="button" class="card" data-i="12" data-name="Sea Ambulance — Tunay at Natural" data-app="Medical Evacuation" data-engines="1" data-where="" aria-label="Sea Ambulance — Tunay at Natural, Medical Evacuation. View details">
+          <img src="assets/images/builds/sea-ambulance-tunay-at-natural.jpg" alt="Sea Ambulance — Tunay at Natural, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Medical Evacuation</span>
+          <span class="card-name">Sea Ambulance — Tunay at Natural</span>
+        </button>
+        <button type="button" class="card" data-i="13" data-name="Calista" data-app="Private &amp; Fishing" data-engines="2" data-where="" aria-label="Calista, Private &amp; Fishing. View details">
+          <img src="assets/images/builds/calista.jpg" alt="Calista, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Private &amp; Fishing</span>
+          <span class="card-name">Calista</span>
+        </button>
+        <button type="button" class="card" data-i="14" data-name="Manilyn Reynes" data-app="Private &amp; Leisure" data-engines="2" data-where="" aria-label="Manilyn Reynes, Private &amp; Leisure. View details">
+          <img src="assets/images/builds/manilyn-reyes.jpg" alt="Manilyn Reynes, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Private &amp; Leisure</span>
+          <span class="card-name">Manilyn Reynes</span>
+        </button>
+        <button type="button" class="card" data-i="15" data-name="RedWhale" data-app="Passenger Ferry" data-engines="" data-where="" aria-label="RedWhale, Passenger Ferry. View details">
+          <img src="assets/images/builds/redwhale.jpg" alt="RedWhale, The Boat Shop Corporation build" loading="lazy" decoding="async"/>
+          <span class="card-pill">Passenger Ferry</span>
+          <span class="card-name">RedWhale</span>
+        </button>
+    </div>
+    <div class="builds-foot">
+      <div class="deck-count" id="deck-count">16 builds</div>
+      <div class="deck-caption" id="deck-caption" aria-live="polite">
+        <div class="deck-hint" id="deck-hint">Tap the stack to spread out our builds</div>
+        <div class="c-app" id="c-app">&nbsp;</div>
+        <div class="c-row">
+          <button type="button" class="m-btn c-arrow" id="deck-prev" aria-label="Previous build"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <div class="c-name" id="c-name">&nbsp;</div>
+          <button type="button" class="m-btn c-arrow" id="deck-next" aria-label="Next build"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <div class="deck-cta"><button type="button" class="btn btn-navy btn-sm" id="deck-open">View details</button></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-mark" aria-label="The Boat Shop Corporation, home"><img class="logo-navy-img" style="opacity:1" src="assets/images/logo-navy.png" alt="The Boat Shop Corporation crest"/></a>
+        <span class="footer-name">The Boat Shop<small>Corporation, est. 1957</small></span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="builds.html">Builds</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social" aria-label="Follow us on social media">
+        <a class="foot-social" href="https://www.facebook.com/boatshopphilippines" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+        <a class="foot-social" href="https://www.instagram.com/theboatshopcorporation/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 The Boat Shop Corporation. All rights reserved.</span>
+      <span>Rosario, Cavite, Philippines. Est. 1957</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Build detail -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-title" aria-hidden="true">
+  <div class="modal-scrim" id="modal-scrim"></div>
+  <div class="modal-panel" id="modal-panel">
+    <button type="button" class="m-btn modal-close" id="m-close" aria-label="Close details"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <div class="modal-media" id="m-media"><img id="m-img" src="" alt=""/></div>
+    <div class="modal-body" id="m-body">
+      <div class="modal-app" id="m-app"></div>
+      <h3 id="m-title"></h3>
+      <div class="specs" id="m-specs"></div>
+      <p class="modal-note">Length, beam, capacity, engine and fuel details are shared on request, configured to your operation.</p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-navy btn-sm js-inquiry-trigger" data-form-url="https://docs.google.com/forms/d/e/1FAIpQLSdglZTCsjjjnS9Xz04HMgk5vo55dq-pGL-_iDdlhTLxzVGUOg/viewform">Ask about a similar build</button>
+        <div class="modal-nav">
+          <button type="button" class="m-btn" id="m-prev" aria-label="Previous build"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button type="button" class="m-btn" id="m-next" aria-label="Next build"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
