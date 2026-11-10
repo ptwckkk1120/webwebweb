@@ -133,7 +133,7 @@
       if (icon) icon.textContent = open ? '\u00d7' : '\u2630';
     };
     menuToggle.addEventListener('click', () => setMenu(!header.classList.contains('menu-open')));
-    $$('a[href^="#"]', navLinks).forEach(a => a.addEventListener('click', () => setMenu(false)));
+    $$('a', navLinks).forEach(a => a.addEventListener('click', () => setMenu(false)));
     document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
     window.addEventListener('resize', () => { if (window.innerWidth > 760) setMenu(false); }, { passive: true });
   }
@@ -191,6 +191,7 @@
   /* ------------------------------------------------------------------ */
   /* Recent builds: arrow-driven carousel (page scroll is never hijacked) */
   /* ------------------------------------------------------------------ */
+  if ($('#deck')) {
   const section = $('#gallery');
   const deck = $('#deck');
   const cards = $$('.card', deck);
@@ -403,6 +404,41 @@
     }
   });
 
+  layoutDeck(false);
+  setCaption(0, true);
+  }
+
+
+  /* ------------------------------------------------------------------ */
+  /* Page transitions: navy curtain wipes between pages                  */
+  /* ------------------------------------------------------------------ */
+  const curtain = $('#curtain');
+  if (curtain && !reduceMQ.matches) {
+    const reveal = () => {
+      try { sessionStorage.removeItem('tbsc-nav'); } catch (e) {}
+      curtain.classList.remove('in');
+      requestAnimationFrame(() => requestAnimationFrame(() => root.classList.remove('arriving')));
+    };
+    if (root.classList.contains('arriving')) {
+      if (document.readyState === 'complete') reveal(); else window.addEventListener('load', reveal, { once: true });
+      setTimeout(reveal, 2500);
+    }
+    window.addEventListener('pageshow', e => { if (e.persisted) { curtain.classList.remove('in'); root.classList.remove('arriving'); } });
+    document.addEventListener('click', e => {
+      const a = e.target.closest && e.target.closest('a[href]');
+      if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      if (a.target && a.target !== '_self') return;
+      const u = new URL(a.href, location.href);
+      if (u.origin !== location.origin || !/\.html$|\/$/.test(u.pathname)) return;
+      if (u.pathname === location.pathname && u.hash) return;
+      if (u.pathname === location.pathname) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+      e.preventDefault();
+      try { sessionStorage.setItem('tbsc-nav', '1'); } catch (err) {}
+      curtain.classList.add('in');
+      setTimeout(() => { location.href = a.href; }, 620);
+    });
+  }
+
   /* ------------------------------------------------------------------ */
   /* One scroll loop for everything scroll-linked                        */
   /* ------------------------------------------------------------------ */
@@ -420,7 +456,7 @@
     scrollVel = lerp(scrollVel, clamp(dy, -60, 60), 0.35);
 
     // header
-    header.classList.toggle('solid', y > 60);
+    header.classList.toggle('solid', y > 60 || document.body.classList.contains('subpage'));
     if (!header.classList.contains('menu-open')) {
       if (y > 420 && dy > 4) header.classList.add('hide');
       else if (dy < -4 || y < 420) header.classList.remove('hide');
@@ -452,7 +488,5 @@
   window.addEventListener('scroll', requestTick, { passive: true });
   
 
-  layoutDeck(false);
-  setCaption(0, true);
   update();
 })();
